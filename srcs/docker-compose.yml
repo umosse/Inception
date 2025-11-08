@@ -11,6 +11,14 @@ volumes:
       o: bind
       type: none
 
+  wordpress:
+    name: wordpress
+    driver: local
+    driver_opts:
+      device: ~/data/wordpress
+      o: bind
+      type: none
+
 services:
   mariadb:
     container_name: mariadb
@@ -21,4 +29,30 @@ services:
       - .env
     networks:
       - inception
-    restart: on-failure 
+    restart: on-failure
+
+  nginx:
+    container_name: nginx
+    build: requirements/nginx
+    depends_on:
+      - wordpress
+    ports:
+      - "443:443"
+    volumes:
+      - wordpress:/var/www/html
+    networks:
+      - inception
+    restart: on-failure
+
+  wordpress:
+    container_name: wordpress
+    build: requirements/wordpress
+    depends_on: 
+      - mariadb
+    volumes:
+      - wordpress:/var/www/html
+    env_file:
+      - .env
+    networks:
+      - inception
+    restart: on-failure
