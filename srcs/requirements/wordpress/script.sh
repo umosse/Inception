@@ -23,6 +23,8 @@ if [ ! -f "$FILE" ]; then
     # Create a guest user using WP-CLI.
     wp --allow-root user create $WP_GUEST_USER $WP_GUEST_EMAIL --user_pass=$WP_GUEST_PASSWORD --path='/var/www/html'
 
+    wp theme activate twentytwentyfour --allow-root --path="/var/www/html"
+
 fi
 
 # Set correct ownership and permissions for the WordPress files.
