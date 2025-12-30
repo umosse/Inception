@@ -1,9 +1,9 @@
 #!/bin/bash
 
-FILE=/var/www/html/wp-config.php
+CONFIG=/var/www/html/wp-config.php
 
 # Check if the wp-config.php file does not exist.
-if [ ! -f "$FILE" ]; then
+if [ ! -f "$CONFIG" ]; then
 
     # Create a directory for the WordPress installation.
     mkdir -p /var/www/html

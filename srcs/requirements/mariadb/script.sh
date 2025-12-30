@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ ! -d "/var/lib/mysql/$SQL_DATABASE" ]]; then
+if [[ ! -d "/var/lib/mysql/$SQL_DATABASE" ]]; then # 
 	mariadb-install-db --user=mysql
 	service mariadb start
 	mysql -e "CREATE DATABASE IF NOT EXISTS ${SQL_DATABASE};"
