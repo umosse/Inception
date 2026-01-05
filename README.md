@@ -1,8 +1,7 @@
 _This project has been created as part of the 42 curriculum by umosse._
 
 Table of Contents
-- [Description](#description)
-- [Run](#run)
+- [Description](#Description)
 - [Instructions](#Instructions)
 - [Resources](#Resources)
 
@@ -61,9 +60,10 @@ You can then access the Wordpress site at https://localhost/ or https://umosse.4
 Finally to access the admin dashboard, add wp-admin at the end of the url and login using the value of WP_ADMIN_USER and WP_ADMIN_PASSWORD in your .env file.
 
 > [!WARNING]
-There is a sudo rm -rf ~/data in makefile
+There is a sudo rm -rf ~/data in the Makefile, please ensure nothing important is located here.
 
 ## Resources
+
 
 
 [this is a link](https://cdn.intra.42.fr/pdf/pdf/189609/en.subject.pdf)
