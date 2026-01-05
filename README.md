@@ -15,20 +15,9 @@ Inception is a required project from the 42 common core. This project aims to he
 
 
 
-- This is a bullet point
+- Virtual machines virtualize the entirety of a computer which makes both the load on your computer very heavy, often taking multiple GigaBytes of space for a simple script, and your program very slow due to the amount of resources your computer allocates just to run the VM. On the other hand Docker does not virtualize and instead runs your program inside containers which contain everything your program needs to run on.
 - This is a second bullet point
 
-
-```cpp
-```
-
-| Service | How to access |
-|:-------------:|-------------|
-| Wordpress | Access your WordPress site at https://localhost/. Use the admin credentials set in your .env file to log in to the admin dashboard at https://localhost/wp-admin. |
-| Adminer   | Manage the database using Adminer at https://localhost/adminer/. Use the database credentials from your .env file to log in. |
-| Portfolio | View the portfolio site at http://localhost:8080/. |
-| Redis     | Redis is running as a caching service. Check the admin profile for more details through Wordpress. |
-| vsftpd    | FTP access is available using the vsftpd service. Use the FTP credentials from your .env file to connect via an FTP client (e.g., FileZilla). |
 
 ## Instructions
 
