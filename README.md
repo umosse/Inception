@@ -39,7 +39,7 @@ Once the .env file is done,
 
 | Makefile command | Expected result |
 |:-------------:|-------------|
-| make | Start up the program. |
+| make | Compile the program. |
 | make up | Same as make. |
 | make down | Stop and remove containers and networks. |
 | make clean | Remove all unused images, volumes, and delete ~/data which contains . |
@@ -53,6 +53,10 @@ There is a sudo rm -rf ~/data in the Makefile, please ensure nothing important i
 
 ## Resources
 
+[Everything Docker](https://docs.docker.com/)
 
+[How to write a good ReadMe file](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/)
 
-[this is a link](https://cdn.intra.42.fr/pdf/pdf/189609/en.subject.pdf)
+No AI was used for this project.
+
+Huge shoutouts to [vpekdas](https://github.com/vpekdas) for helping me with this project.
