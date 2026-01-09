@@ -1,5 +1,3 @@
-#!/bin/bash
-
 CONFIG=/var/www/html/wp-config.php
 
 # Check if the wp-config.php file does not exist.
@@ -27,8 +25,8 @@ if [ ! -f "$CONFIG" ]; then
 
 fi
 
-# Set correct ownership and permissions for the WordPress files.
+# Give ownership and permissions to www-data.
 chown -R www-data:www-data /var/www/html
 
-# Start PHP-FPM service in the foreground.
+# Tell ENTRYPOINT to execute arguments as commands.
 exec "$@"
