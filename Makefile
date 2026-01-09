@@ -9,3 +9,5 @@ down :
 
 clean :
 	docker system prune --volumes -f -a
+
+.PHONY : all up down clean
