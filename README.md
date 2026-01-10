@@ -21,7 +21,9 @@ Inception is a required project from the 42 common core. This project aims to he
 
 ## Instructions
 
-To run the project, you will first need a .env file which can fill in the following :
+Before anything, you will need docker and make installed on your machine.
+
+To run the project, you will first need a .env file located in /srcs which can fill in the following :
 
 - SQL_DATABASE
 - SQL_USER
@@ -39,7 +41,7 @@ Once the .env file is done,
 
 | Makefile command | Expected result |
 |:-------------:|-------------|
-| make | Compile the program. |
+| make | Build the dockers. |
 | make up | Same as make. |
 | make down | Stop and remove containers and networks. |
 | make clean | Remove all unused images, volumes, and delete ~/data which contains . |
