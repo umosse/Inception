@@ -7,16 +7,14 @@ Table of Contents
 
 ## Description
 
-Inception is a required project from the 42 common core. This project aims to help the student understand the ins and outs of Docker and docker-compose by creating a Wordpress site using MariaDB as the database and Nginx as the web server.
-
-[Project subject](https://cdn.intra.42.fr/pdf/pdf/189609/en.subject.pdf)
+Inception is a required project from the 42 common core. This project aims to help the student understand the ins and outs of Docker and docker-compose by creating a Wordpress site using MariaDB as the database and Nginx as the web server. All three services are isolated in the architecture to manage them independently.
 
 ### Project Description
 
-
-
-- Virtual machines virtualize the entirety of a computer which makes both the load on your computer very heavy, often taking multiple GigaBytes of space for a simple script, and your program very slow due to the amount of resources your computer allocates just to run the VM. On the other hand Docker does not virtualize and instead runs your program inside containers which contain everything your program needs to run on.
-- This is a second bullet point
+- Why Docker > Virtual machines : Virtual machines virtualize the entirety of a computer which makes both the load on your computer very heavy, often taking multiple GigaBytes of space for a simple script, and your program very slow due to the amount of resources your computer allocates just to run the VM. On the other hand Docker does not virtualize and instead runs your program inside isolated instances called containers which contain everything your program needs to run on, whatever your machine.
+- Docker secrets or .env files : While both are used to store sensitive data, Docker secrets are both encrypted and not visible easily while .env files are less secure and protected but a lot easier to access. Docker secrets are also necessary when using Docker swarm which is not used in this project, hence the use of .env files here.
+- Docker network vs host network : Host network is the network used by your own computer, which unlike Docker network, is not isolated. Docker network gives each container their own IP adress making the network safer.
+- Docker volumes vs bind mounts : Both systems are used to store persistent data. Bind mounts require an absolute path to the data to access it and must be created before running docker while docker volumes are automatically managed by docker, created if they do not exist and reused if they already do.
 
 
 ## Instructions
