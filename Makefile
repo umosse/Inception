@@ -9,5 +9,6 @@ down :
 
 clean :
 	docker system prune --volumes -f -a
+	sudo rm -rf ~/data
 
 .PHONY : all up down clean
