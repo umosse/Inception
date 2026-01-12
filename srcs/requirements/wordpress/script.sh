@@ -1,3 +1,5 @@
+#!/bin/bash
+
 CONFIG=/var/www/html/wp-config.php
 
 # Check if the wp-config.php file does not exist.
